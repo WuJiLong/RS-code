@@ -120,7 +120,7 @@ CPolynomial CPolynomial::differential(){
 unsigned int CPolynomial::distance(CPolynomial in){
     unsigned int count=0;
     for(int i=0;i<PolynomialSize;i++){
-        if(in[i]==Coefficient[i])count++;
+        if(in[i]!=Coefficient[i])count++;
     }
     return count;
 }
